@@ -1,0 +1,244 @@
+.product-detail-page {
+  max-width: 1200px;
+}
+
+.back-btn {
+  margin-bottom: 2rem;
+  padding: 0.7rem 1.5rem;
+  background: transparent;
+  border: 1px solid #333;
+  color: inherit;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.back-btn:hover {
+  border-color: #646cff;
+  background: rgba(100, 108, 255, 0.1);
+}
+
+.product-detail-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.product-image-section {
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+}
+
+.product-image-large {
+  font-size: 15rem;
+  text-align: center;
+  padding: 3rem;
+  background: rgba(100, 108, 255, 0.1);
+  border-radius: 16px;
+  border: 1px solid #333;
+}
+
+.product-details-section {
+  padding: 1rem 0;
+}
+
+.product-category {
+  color: #646cff;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.product-details-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.product-rating-detail {
+  font-size: 1.2rem;
+  color: #ffc107;
+  margin-bottom: 1.5rem;
+}
+
+.product-rating-detail span {
+  color: inherit;
+  opacity: 0.6;
+  margin-left: 0.5rem;
+}
+
+.product-description-full {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.product-price-large {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #646cff;
+  margin-bottom: 2rem;
+}
+
+.product-features {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.product-features h3 {
+  margin-bottom: 1rem;
+}
+
+.product-features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.product-features li {
+  padding: 0.5rem 0;
+  font-size: 1.05rem;
+}
+
+.product-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.add-to-cart-btn-large,
+.buy-now-btn {
+  flex: 1;
+  padding: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.add-to-cart-btn-large {
+  background: #646cff;
+  color: white;
+}
+
+.add-to-cart-btn-large:hover {
+  background: #535bf2;
+  transform: scale(1.02);
+}
+
+.buy-now-btn {
+  background: transparent;
+  border: 2px solid #646cff;
+  color: #646cff;
+}
+
+.buy-now-btn:hover {
+  background: rgba(100, 108, 255, 0.1);
+  transform: scale(1.02);
+}
+
+.product-guarantees {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.guarantee-item {
+  padding: 0.7rem;
+  background: rgba(100, 108, 255, 0.1);
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.related-products {
+  margin-top: 4rem;
+}
+
+.related-products h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.related-card {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.related-card:hover {
+  transform: translateY(-5px);
+  border-color: #646cff;
+  box-shadow: 0 5px 20px rgba(100, 108, 255, 0.3);
+}
+
+.related-image {
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(100, 108, 255, 0.1);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.related-card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.related-price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #646cff;
+}
+
+@media (prefers-color-scheme: light) {
+  .product-image-large,
+  .product-features,
+  .related-card {
+    background: #f9f9f9;
+    border-color: #e0e0e0;
+  }
+}
+
+@media (max-width: 968px) {
+  .product-detail-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .product-image-section {
+    position: static;
+  }
+  
+  .product-image-large {
+    font-size: 10rem;
+  }
+  
+  .product-details-section h1 {
+    font-size: 2rem;
+  }
+  
+  .product-price-large {
+    font-size: 2.5rem;
+  }
+  
+  .product-actions {
+    flex-direction: column;
+  }
+}
